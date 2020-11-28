@@ -3,8 +3,8 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket = "vinga-terraform-state"
-    key    = "demo/stage/terraform.tfstate"
+    bucket = "vinga-demo-terraform-state"
+    key    = "terraform.tfstate"
     region = "ap-south-1"
     dynamodb_table = "terraform-lock"
   }

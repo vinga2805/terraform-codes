@@ -16,4 +16,6 @@ variable "sub3_cidr" {
 variable "sub4_cidr" {
   default = "10.0.0.192/26"
 }
-
+variable "env" {
+  default = "stage"
+}

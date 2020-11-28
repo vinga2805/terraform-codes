@@ -4,7 +4,7 @@ resource "aws_vpc" "main" {
 
   tags = {
     Name = "demo-vpc"
-    Environment = "stage"
+    Environment = var.env
   }
 }
 resource "aws_subnet" "sub1" {
